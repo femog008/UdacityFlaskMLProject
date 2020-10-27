@@ -25,5 +25,4 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST https://udacity-cicd-capstone.azurewebsites.net:$PORT/predict 
-     #your application name <yourappname>goes here
+     -X POST https://udacity-cicd-capstone.azurewebsites.net:$PORT/predict
