@@ -43,26 +43,26 @@ Create a Repository
     
 * Create ssh-keys in Azure Cloud Shell
     Run the command: `ssh-keygen -t rsa"`
-    ![Alt text](screenshots/screenshot_4.png?raw=true "Generate SSH Key")
+    ![Alt text](images/screenshot_4.png?raw=true "Generate SSH Key")
         
 * Upload ssh-keys to Github
     Under Profile settings, click on "SSH and GPG Keys" and add the generated SSH Key
-    ![Alt text](screenshots/screenshot_5.png?raw=true "Add SSH Key")
+    ![Alt text](images/screenshot_5.png?raw=true "Add SSH Key")
     
 * Clone Github repo on cloud shell
     Run the command: `git clone "{Link to Github Repository}"`
-    ![Alt text](screenshots/screenshot_6.png?raw=true "Clone repo")   
+    ![Alt text](images/screenshot_6.png?raw=true "Clone repo")   
     
 * Add your python code/source files
 
 * Add a Makefile and define test file
     Create a Makefile and define the following section as show below:
-    ![Alt text](screenshots/screenshot_7.png?raw=true "Add Makefile")    
-    ![Alt text](screenshots/screenshot_8.png?raw=true "Add test file")    
+    ![Alt text](images/screenshot_7.png?raw=true "Add Makefile")    
+    ![Alt text](images/screenshot_8.png?raw=true "Add test file")    
     
 * Run a local test to ensure the test with pyling is working 
     Run the command: `make all` and confirm all tests pass
-    ![Alt text](screenshots/screenshot_9.png?raw=true "Run make all")
+    ![Alt text](images/screenshot_9.png?raw=true "Run make all")
 
 To configure Continous Delivery
 
@@ -70,27 +70,27 @@ To configure Continous Delivery
 * Add a Project
 * Add a Pipeline
     Select Github under `Where is your code?`
-    ![Alt text](screenshots/screenshot_10.png?raw=true "Add pipeline")
+    ![Alt text](images/screenshot_10.png?raw=true "Add pipeline")
     
     Select the right repository
-    ![Alt text](screenshots/screenshot_11.png?raw=true "choose repository")
+    ![Alt text](images/screenshot_11.png?raw=true "choose repository")
     
     Select the option as shown below:
-    ![Alt text](screenshots/screenshot_12.png?raw=true "choose Python To Linux")
+    ![Alt text](images/screenshot_12.png?raw=true "choose Python To Linux")
     
     Select your subscription and login:
-    ![Alt text](screenshots/screenshot_13.png?raw=true "Choose subscription")
+    ![Alt text](images/screenshot_13.png?raw=true "Choose subscription")
     
     Select your wepapp name, validate and configure:
-    ![Alt text](screenshots/screenshot_13.png?raw=true "choose webapp")
+    ![Alt text](images/screenshot_13.png?raw=true "choose webapp")
     
 * A succesfull deployment will be similar to the screenshot below:
-    ![Alt text](screenshots/screenshot_15.png?raw=true "Add pipeline")
+    ![Alt text](images/screenshot_15.png?raw=true "Add pipeline")
     
 * Running Azure App Service from Azure Pipelines automatic deployment
     The webapp is successfully deployed and running
-    ![Alt text](screenshots/screenshot_3.png?raw=true "Running WebApp")
-    ![Alt text](screenshots/screenshot_16.png?raw=true "App via browser")
+    ![Alt text](images/screenshot_3.png?raw=true "Running WebApp")
+    ![Alt text](images/screenshot_16.png?raw=true "App via browser")
     
 * Test the Deployed Service
     Run the following script from the deployment folder in cloud shell:
@@ -101,10 +101,10 @@ To configure Continous Delivery
     ```
     
     A similar result is expected as shown above:
-    ![Alt text](screenshots/screenshot_17.png?raw=true "Prediction Result")
+    ![Alt text](images/screenshot_17.png?raw=true "Prediction Result")
     
     Output from streamed Log File shows activity confirming the previous test:
-    ![Alt text](screenshots/screenshot_18.png?raw=true "Log ")
+    ![Alt text](images/screenshot_18.png?raw=true "Log ")
 
 ## Enhancements
 
