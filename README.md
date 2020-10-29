@@ -36,7 +36,7 @@ Create a Repository
 
 * Log into your Github account and create a repostory.
 
-[Repository](images/screenshot_2.png?raw=true "New Repo")
+![Repository](images/screenshot_2.png?raw=true "New Repo")
 
 * Log into Azure Cloud Shell and create a webapp
     `az webapp up -n projectName`
