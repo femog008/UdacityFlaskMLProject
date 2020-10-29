@@ -1,48 +1,117 @@
+![Udacity Flask ML CI/CD](https://github.com/femog008/UdacityFlaskMLProject/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
+
 # Overview
 
-<TODO: complete this with an overview of your project>
+This is and End-To-End Project that illustrates building a CI/CD for your development tasks.
+
+A successfully implementation and deployment of the CI/CD should eliminate manual testing, building and deployment of source code.
+
+The following sections will be address in this project:
+
+* Setup and configure Continous Integration
+    --Add Github Repository
+    --Add Github Actions to Repository
+    --Add Test/Lint to the code base
+    --Deploy and Test CI functionality
+
+* Setup and configure Continous Delivery
+    --Add/Create a project to Azure DevOps
+    --Setup Virtual environment
+    --Configure a Pipeline
+    --Test CD functionality on Azure PipeLine
+
 
 ## Project Plan
-<TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+Find links to the Project Plan/Board below:
+
+* [Project Plan Google Sheets](https://trello.com/b/9fkfM44w/udacity-flaskml-cicd).
+* [Project Plan Trello Board](https://docs.google.com/spreadsheets/d/1SjQ7rr3Z2w4xwnkOLhOgVUFBdpgUWeWlp3MD_4WFXwU/edit#gid=311255061).
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+![CD/CI Arquitecture](images/screenshot_1.png?raw=true "CD/CI Arquitecture")
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+Create a Repository
 
-* Project running on Azure App Service
+* Log into your Github account and create a repostory.
 
-* Project cloned into Azure Cloud Shell
+[Repository](images/screenshot_2.png?raw=true "New Repo")
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
+* Log into Azure Cloud Shell and create a webapp
+    `az webapp up -n projectName`
+    
+* Create ssh-keys in Azure Cloud Shell
+    Run the command: `ssh-keygen -t rsa"`
+    ![Alt text](screenshots/screenshot_4.png?raw=true "Generate SSH Key")
+        
+* Upload ssh-keys to Github
+    Under Profile settings, click on "SSH and GPG Keys" and add the generated SSH Key
+    ![Alt text](screenshots/screenshot_5.png?raw=true "Add SSH Key")
+    
+* Clone Github repo on cloud shell
+    Run the command: `git clone "{Link to Github Repository}"`
+    ![Alt text](screenshots/screenshot_6.png?raw=true "Clone repo")   
+    
+* Add your python code/source files
 
-* Output of a test run
+* Add a Makefile and define test file
+    Create a Makefile and define the following section as show below:
+    ![Alt text](screenshots/screenshot_7.png?raw=true "Add Makefile")    
+    ![Alt text](screenshots/screenshot_8.png?raw=true "Add test file")    
+    
+* Run a local test to ensure the test with pyling is working 
+    Run the command: `make all` and confirm all tests pass
+    ![Alt text](screenshots/screenshot_9.png?raw=true "Run make all")
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+To configure Continous Delivery
 
+* Login to [Azure DevOps](https://dev.azure.com)
+* Add a Project
+* Add a Pipeline
+    Select Github under `Where is your code?`
+    ![Alt text](screenshots/screenshot_10.png?raw=true "Add pipeline")
+    
+    Select the right repository
+    ![Alt text](screenshots/screenshot_11.png?raw=true "choose repository")
+    
+    Select the option as shown below:
+    ![Alt text](screenshots/screenshot_12.png?raw=true "choose Python To Linux")
+    
+    Select your subscription and login:
+    ![Alt text](screenshots/screenshot_13.png?raw=true "Choose subscription")
+    
+    Select your wepapp name, validate and configure:
+    ![Alt text](screenshots/screenshot_13.png?raw=true "choose webapp")
+    
+* A succesfull deployment will be similar to the screenshot below:
+    ![Alt text](screenshots/screenshot_15.png?raw=true "Add pipeline")
+    
 * Running Azure App Service from Azure Pipelines automatic deployment
-
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
-
-* Output of streamed log files from deployed application
-
-> 
+    The webapp is successfully deployed and running
+    ![Alt text](screenshots/screenshot_3.png?raw=true "Running WebApp")
+    ![Alt text](screenshots/screenshot_16.png?raw=true "App via browser")
+    
+* Test the Deployed Service
+    Run the following script from the deployment folder in cloud shell:
+    ```bash
+    udacity@Azure:~$ ./make_predict_azure_app.sh
+    Port: 443
+    {"prediction":[20.35373177134412]}
+    ```
+    
+    A similar result is expected as shown above:
+    ![Alt text](screenshots/screenshot_17.png?raw=true "Prediction Result")
+    
+    Output from streamed Log File shows activity confirming the previous test:
+    ![Alt text](screenshots/screenshot_18.png?raw=true "Log ")
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+There is still room for improvement:
+
+* Configure Release for Flask ML API
+* Enhance the Frontend to include a User-Friendly interface to make predictions.
 
 ## Demo 
 
