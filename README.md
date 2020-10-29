@@ -2,7 +2,7 @@
 
 # Overview
 
-This is and End-To-End Project that illustrates building a CI/CD for your development tasks. :)
+This is and End-To-End Project that illustrates building a CI/CD for your development tasks.
 
 A successfully implementation and deployment of the CI/CD should eliminate manual testing, building and deployment of source code.
 
