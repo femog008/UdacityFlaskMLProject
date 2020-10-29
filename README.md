@@ -92,7 +92,7 @@ To configure Continous Delivery
     ![Alt text](images/Screenshot_16.png?raw=true "App via browser")
     
 * Test the Deployed Service.
-    Run the following script from the deployment folder in cloud shell:
+    `Run the following script from the deployment folder in cloud shell:`
     ```bash
     udacity@Azure:~$ ./make_predict_azure_app.sh
     Port: 443
