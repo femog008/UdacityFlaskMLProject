@@ -1,5 +1,4 @@
-![Udacity Flask ML CI/CD](https://github.com/femog008/UdacityFlaskMLProject/workflows/Python+application+test+with+Github+Actions/badge.svg)
-
+![Python application test with Github Actions](https://github.com/femog008/UdacityFlaskMLProject/workflows/Python+application+test+with+Github+Actions/badge.svg)
 # Overview
 
 This is and End-To-End Project that illustrates building a CI/CD for your development tasks.
