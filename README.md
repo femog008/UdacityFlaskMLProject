@@ -9,16 +9,16 @@ A successfully implementation and deployment of the CI/CD should eliminate manua
 The following sections will be address in this project:
 
 `Setup and configure Continous Integration`
-    * Add Github Repository
-    * Add Github Actions to Repository
-    * Add Test/Lint to the code base
-    * Deploy and Test CI functionality
+* Add Github Repository
+* Add Github Actions to Repository
+* Add Test/Lint to the code base
+* Deploy and Test CI functionality
 
 `Setup and configure Continous Delivery`
-    * Add/Create a project to Azure DevOps
-    * Setup Virtual environment
-    * Configure a Pipeline
-    * Test CD functionality on Azure PipeLine
+* Add/Create a project to Azure DevOps
+* Setup Virtual environment
+* Configure a Pipeline
+* Test CD functionality on Azure PipeLine
 
 
 ## Project Plan
