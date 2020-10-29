@@ -55,12 +55,11 @@ Create a Repository
     
 * Add your python code/source files
 
-* Add a Makefile and define test file
-    Create a Makefile and define the following section as show below:
+* Add a Makefile and define test file. Create a Makefile and define the following section as show below:
     ![Alt text](images/Screenshot_7.png?raw=true "Add Makefile")    
     ![Alt text](images/Screenshot_8.png?raw=true "Add test file")    
     
-* Run a local test to ensure the test with pyling is working 
+* Run a local test to ensure the test with pylint is working 
     Run the command: `make all` and confirm all tests pass
     ![Alt text](images/Screenshot_9.png?raw=true "Run make all")
 
@@ -69,30 +68,30 @@ To configure Continous Delivery
 * Login to [Azure DevOps](https://dev.azure.com)
 * Add a Project
 * Add a Pipeline
-    Select Github under `Where is your code?`
+* Select Github under `Where is your code?`
     ![Alt text](images/Screenshot_10.png?raw=true "Add pipeline")
     
-    Select the right repository
+* Select the right repository
     ![Alt text](images/Screenshot_11.png?raw=true "choose repository")
     
-    Select the option as shown below:
+* Select the option as shown below:
     ![Alt text](images/Screenshot_12.png?raw=true "choose Python To Linux")
     
-    Select your subscription and login:
+* Select your subscription and login:
     ![Alt text](images/Screenshot_13.png?raw=true "Choose subscription")
     
-    Select your wepapp name, validate and configure:
-    ![Alt text](images/Screenshot_13.png?raw=true "choose webapp")
+* Select your wepapp name, validate and configure:
+    ![Alt text](images/Screenshot_14.png?raw=true "choose webapp")
     
 * A succesfull deployment will be similar to the screenshot below:
     ![Alt text](images/Screenshot_15.png?raw=true "Add pipeline")
     
-* Running Azure App Service from Azure Pipelines automatic deployment
-    The webapp is successfully deployed and running
+* Running Azure App Service from Azure Pipelines automatic deployment 
+    `The webapp is successfully deployed and running`
     ![Alt text](images/Screenshot_3.png?raw=true "Running WebApp")
     ![Alt text](images/Screenshot_16.png?raw=true "App via browser")
     
-* Test the Deployed Service
+* Test the Deployed Service.
     Run the following script from the deployment folder in cloud shell:
     ```bash
     udacity@Azure:~$ ./make_predict_azure_app.sh
@@ -103,7 +102,7 @@ To configure Continous Delivery
     A similar result is expected as shown above:
     ![Alt text](images/Screenshot_17.png?raw=true "Prediction Result")
     
-    Output from streamed Log File shows activity confirming the previous test:
+* Output from streamed Log File shows activity confirming the previous test:
     ![Alt text](images/Screenshot_18.png?raw=true "Log ")
 
 ## Enhancements
