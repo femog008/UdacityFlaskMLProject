@@ -24,8 +24,8 @@ The following sections will be address in this project:
 
 Find links to the Project Plan/Board below:
 
-* [Project Plan Google Sheets](https://trello.com/b/9fkfM44w/udacity-flaskml-cicd).
-* [Project Plan Trello Board](https://docs.google.com/spreadsheets/d/1SjQ7rr3Z2w4xwnkOLhOgVUFBdpgUWeWlp3MD_4WFXwU/edit?usp=sharing).
+* [Project Plan Trello Board](https://trello.com/b/9fkfM44w/udacity-flaskml-cicd).
+* [Project Plan Google Sheets](https://docs.google.com/spreadsheets/d/1SjQ7rr3Z2w4xwnkOLhOgVUFBdpgUWeWlp3MD_4WFXwU/edit?usp=sharing).
 
 ## Instructions
 
