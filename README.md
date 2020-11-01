@@ -1,5 +1,4 @@
-![Udacity Flask ML CI/CD](https://github.com/femog008/UdacityFlaskMLProject/workflows/Python+application+test+with+Github+Actions/badge.svg)
-
+![Python application test with Github Actions](https://github.com/femog008/UdacityFlaskMLProject/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
 # Overview
 
 This is and End-To-End Project that illustrates building a CI/CD for your development tasks.
@@ -25,10 +24,13 @@ The following sections will be address in this project:
 
 Find links to the Project Plan/Board below:
 
-* [Project Plan Google Sheets](https://trello.com/b/9fkfM44w/udacity-flaskml-cicd).
-* [Project Plan Trello Board](https://docs.google.com/spreadsheets/d/1SjQ7rr3Z2w4xwnkOLhOgVUFBdpgUWeWlp3MD_4WFXwU/edit#gid=311255061).
+* [Project Plan Trello Board](https://trello.com/b/9fkfM44w/udacity-flaskml-cicd).
+* [Project Plan Google Sheets](https://docs.google.com/spreadsheets/d/1SjQ7rr3Z2w4xwnkOLhOgVUFBdpgUWeWlp3MD_4WFXwU/edit?usp=sharing).
 
 ## Instructions
+
+
+* Architectural Design
 
 ![CD/CI Arquitecture](images/Screenshot_1.png?raw=true "CD/CI Arquitecture")
 
@@ -114,6 +116,6 @@ There is still room for improvement:
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+* [My Youtube Screencast](https://www.youtube.com/watch?v=ASuozLwX1LM)
 
 
