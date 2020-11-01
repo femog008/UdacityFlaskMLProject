@@ -1,12 +1,17 @@
 from locust import HttpUser, TaskSet, task
+import json
 
+# Loading the test JSON data
+with open('test_data.json') as f:
+    test_data = json.loads(f.read())
+    
 class MyTask(TaskSet):
     def get_root_path(self):
         self.client.get("/")
     
     @task
     def get_predictions(self):
-        self.client.post("/predict")
+        self.client.post("/predict", json = test_data)
 
 class MyLocust(HttpUser):
     tasks = [MyTask]
