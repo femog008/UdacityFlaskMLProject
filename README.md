@@ -105,7 +105,10 @@ To configure Continous Delivery
     ![Alt text](images/Screenshot_17.png?raw=true "Prediction Result")
     
 * Output from streamed Log File shows activity confirming the previous test:
-    ![Alt text](images/Screenshot_18.png?raw=true "Log ")
+    ![Alt text](images/Screenshot_18.png?raw=true "Log")    
+	
+* Output from Load Testing using Locust:
+    ![Alt text](images/Screenshot_19.png?raw=true "Load Test")
 
 ## Enhancements
 

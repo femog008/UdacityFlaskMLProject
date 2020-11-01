@@ -1,16 +1,15 @@
-from locust import HttpLocust, TaskSet, task
+from locust import HttpUser, TaskSet, task
 
 class MyTask(TaskSet):
-    @task
     def get_root_path(self):
         self.client.get("/")
     
     @task
     def get_predictions(self):
-        self.client.get("/predict")
+        self.client.post("/predict")
 
-class MyLocust(HttpLocust):
-    task_set = MyTask
-
+class MyLocust(HttpUser):
+    tasks = [MyTask]
+    host = "https://udacity-cicd-capstone.azurewebsites.net"
     min_wait = 1000
     max_wait = 2000
